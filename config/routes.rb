@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
 =begin VotaPrato::Application.routes.draw do
+  resources :qualificacoes
+  resources :clientes
 match 'inicio', controller: 'restaurantes', action: 'index', via: 'get'
 end
 =end
@@ -63,6 +65,8 @@ end
 
 resources :restaurantes 
 #VotaPrato::Application.routes.draw do
+  resources :qualificacoes
+  resources :clientes
 #match 'inicio', controller: 'restaurantes', action: 'index', via: 'get'
 #end
 
